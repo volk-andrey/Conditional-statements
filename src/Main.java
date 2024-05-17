@@ -14,7 +14,7 @@ public class Main {
         int temp = 25;
         if (temp < 5) {
             System.out.println("На улице холодно, нужно надеть шапку");
-        } else if (temp > 5) {
+        } else if (temp >= 5) {
             System.out.println("Сегодня тепло, можно идти без шапки");
         }
 
@@ -23,7 +23,7 @@ public class Main {
         int speed = 100;
         if (speed > 60) {
             System.out.println("Если скорость " + speed + ",то придется заплатить штраф");
-        } else{
+        } else {
             System.out.println("Если скорость " + speed + ",то можно ездить спокойно");
         }
 
@@ -43,7 +43,7 @@ public class Main {
         //Task5
 
         age = 7;
-        if (age < 5 ) {
+        if (age < 5) {
             System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на атракционе");
         } else if (age >= 5 && age < 14) {
             System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на атракционе, только в сопровождении взрослого");
@@ -56,7 +56,7 @@ public class Main {
         int capacityTrain = 102;
         int capacitySeating = 60;
         int capacityStanding = capacityTrain - capacitySeating;
-        if (pepleInTrain < capacitySeating) {
+        if (pepleInTrain <= capacitySeating) {
             System.out.println("Если количество пассажиров " + pepleInTrain + " , то в вагоне есть сидячие места");
         } else if (pepleInTrain >= capacitySeating && pepleInTrain <= capacityTrain) {
             System.out.println("Если количество пассажиров " + pepleInTrain + ", то в вагоне есть стоячие места");
